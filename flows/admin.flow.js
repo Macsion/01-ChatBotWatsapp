@@ -4,7 +4,7 @@ const { toggleActive, toogleActiveBot, conversationsOff } = require("../scripts/
 const adminFlow = addKeyword(["!onoff", "!help", "!activeconv", "!conversationsOff"])
     .addAction(async (ctx, ctxFn) => {
         // Lista de números de administradores autorizados
-        const adminNum = ["5491162132490"];
+        const adminNum = ["5491157432300"];
 
         // Validación de número de administrador
         if (!adminNum.includes(ctx.from)) {

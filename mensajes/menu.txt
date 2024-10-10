@@ -1,0 +1,7 @@
+*Menu de opciones disponibles:*
+
+Opcion 1️⃣ - *Quiero ver el PDF*
+Opcion 2️⃣ - *Quiero hacer una consulta*
+Opcion 3️⃣ - *Quiero hablar con un asesor*
+
+0️⃣ - *Volver al inicio*

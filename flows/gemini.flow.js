@@ -6,7 +6,7 @@ const pdf = require("pdf-parse");
 
 // Me conecto con drive para tener las credenciales y permisos de acceso
 const { Storage } = require('@google-cloud/storage');
-const storage = new Storage({ keyFilename: './Drivechatbot.json' });
+const storage = new Storage({ keyFilename: process.env.Drivechatbot });
 
 
 const geminiFlow = addKeyword(EVENTS.ACTION)

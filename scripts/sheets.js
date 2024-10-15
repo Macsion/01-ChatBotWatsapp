@@ -2,11 +2,12 @@ const { google } = require('googleapis');
 
 // Inicializa la librería cliente de Google y configura la autenticación con credenciales de la cuenta de servicio.
 const auth = new google.auth.GoogleAuth({
-    keyFile: './cursochatbot.json',  // Ruta al archivo de clave de tu cuenta de servicio.
+    keyFile: process.env.cursochatbot,  // Ruta al archivo de clave de tu cuenta de servicio.
     scopes: ['https://www.googleapis.com/auth/spreadsheets']  // Alcance para la API de Google Sheets.
 });
 
 const spreadsheetId = '1TFr4NpdZ5NJwTAs_V2doOmmx5DlBiioOa8ICWYqoyCE'; // ID de tu hoja de cálculo.
+
 
 // Función asíncrona para escribir datos en una hoja de cálculo de Google.
 async function writeToSheet(values, range) {

@@ -1,9 +1,37 @@
-const { google } = require('googleapis');
-require("dotenv").config();
+const { google, sheets_v4 } = require('googleapis');
+const { GaxiosRensponse } = require('gaxios');
+const path = require('path');
+const app = express();
+const dotenv = require('dotenv');
+
+dotenv.config();
+
+const googleCredentials = JSON.parse(process.env.cursochatbot);
+
+if (!googleCredentials) {
+    throw new Error('cursochatbot environment variable is not defined');
+}
+
+// Ruta al archivo google.json
+const googleJsonPath = path.join(process.cwd(), 'cursochatbot.json');
+
+// Verifica si el archivo google.json existe, si no, lo crea
+if (!fs.existsSync(googleJsonPath)) {
+    try {
+        fs.writeFileSync(googleJsonPath, JSON.stringify(googleCredentials, null, 2));
+        console.log('cursochatbot.json file created successfully.');
+    } catch (error) {
+        throw new Error(`Failed to write google.json file: ${error.message}`);
+    }
+} else {
+    console.log('cursochatbot.json file already exists.');
+}
+
+
 
 // Inicializa la librería cliente de Google y configura la autenticación con credenciales de la cuenta de servicio.
 const auth = new google.auth.GoogleAuth({
-    keyFile: process.env.cursochatbot,  // Ruta al archivo de clave de tu cuenta de servicio.
+    keyFile: './cursochatbot.json',  // Ruta al archivo de clave de tu cuenta de servicio.
     scopes: ['https://www.googleapis.com/auth/spreadsheets']  // Alcance para la API de Google Sheets.
 });
 

@@ -2,9 +2,7 @@ const { google, sheets_v4 } = require('googleapis');
 const { GaxiosRensponse } = require('gaxios');
 const path = require('path');
 const app = express();
-const dotenv = require('dotenv');
-
-dotenv.config();
+require("dotenv").config();
 
 const googleCredentials = JSON.parse(process.env.cursochatbot);
 

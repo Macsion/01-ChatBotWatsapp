@@ -6,8 +6,29 @@ const fs = require('fs');
 const pdf = require("pdf-parse");
 
 // Me conecto con drive para tener las credenciales y permisos de acceso
+const driveCredentials = JSON.parse(process.env.Drivechatbot);
+
+if (!driveCredentials) {
+    throw new Error('Drivechatbot environment variable is not defined');
+}
+// Ruta al archivo Drivechatbot.json
+const driveJsonPath = path.join(process.cwd(), 'Drivechatbot.json');
+
+// Verifica si el archivo Drivechatbot.json existe, si no, lo crea
+if (!fs.existsSync(driveJsonPath)) {
+    try {
+        fs.writeFileSync(driveJsonPath, JSON.stringify(driveCredentials, null, 2));
+        console.log('Drivechatbot.json file created successfully.');
+    } catch (error) {
+        throw new Error(`Failed to write Drivechatbot.json file: ${error.message}`);
+    }
+} else {
+    console.log('Drivechatbot.json file already exists.');
+}
+
+
 const { Storage } = require('@google-cloud/storage');
-const storage = new Storage({ keyFilename: process.env.Drivechatbot });
+const storage = new Storage({ keyFilename: './Drivechatbot.json' });
 
 
 const geminiFlow = addKeyword(EVENTS.ACTION)

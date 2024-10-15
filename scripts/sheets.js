@@ -10,16 +10,16 @@ if (!googleCredentials) {
     throw new Error('cursochatbot environment variable is not defined');
 }
 
-// Ruta al archivo google.json
+// Ruta al archivo cursochatbot.json
 const googleJsonPath = path.join(process.cwd(), 'cursochatbot.json');
 
-// Verifica si el archivo google.json existe, si no, lo crea
+// Verifica si el archivo cursochatbot.json existe, si no, lo crea
 if (!fs.existsSync(googleJsonPath)) {
     try {
         fs.writeFileSync(googleJsonPath, JSON.stringify(googleCredentials, null, 2));
         console.log('cursochatbot.json file created successfully.');
     } catch (error) {
-        throw new Error(`Failed to write google.json file: ${error.message}`);
+        throw new Error(`Failed to write cursochatbot.json file: ${error.message}`);
     }
 } else {
     console.log('cursochatbot.json file already exists.');
@@ -27,7 +27,7 @@ if (!fs.existsSync(googleJsonPath)) {
 
 
 
-// Inicializa la librería cliente de Google y configura la autenticación con credenciales de la cuenta de servicio.
+// Inicializa la librería cliente de Drive y configura la autenticación con credenciales de la cuenta de servicio.
 const auth = new google.auth.GoogleAuth({
     keyFile: './cursochatbot.json',  // Ruta al archivo de clave de tu cuenta de servicio.
     scopes: ['https://www.googleapis.com/auth/spreadsheets']  // Alcance para la API de Google Sheets.

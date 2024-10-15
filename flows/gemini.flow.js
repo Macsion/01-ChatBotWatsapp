@@ -1,3 +1,4 @@
+require("dotenv").config();
 const { addKeyword, EVENTS } = require("@bot-whatsapp/bot");
 const { chat2 } = require("../scripts/gemini");
 const path = require('path');

@@ -1,4 +1,5 @@
 const { google } = require('googleapis');
+require("dotenv").config();
 
 // Inicializa la librería cliente de Google y configura la autenticación con credenciales de la cuenta de servicio.
 const auth = new google.auth.GoogleAuth({

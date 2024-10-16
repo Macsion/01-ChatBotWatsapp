@@ -6,29 +6,33 @@ const fs = require('fs');
 const pdf = require("pdf-parse");
 
 // Me conecto con drive para tener las credenciales y permisos de acceso
+const driveCredentials = JSON.parse(process.env.Drivechatbot);
+
 try {
-    const driveCredentials = JSON.parse(process.env.Drivechatbot);
-
-    if (!driveCredentials) {
-        throw new Error('Drivechatbot environment variable is not defined');
-    }
-    // Ruta al archivo Drivechatbot.json
-    const driveJsonPath = path.join(process.cwd(), 'Drivechatbot.json');
-
-    // Verifica si el archivo Drivechatbot.json existe, si no, lo crea
-    if (!fs.existsSync(driveJsonPath)) {
-        try {
-            fs.writeFileSync(driveJsonPath, JSON.stringify(driveCredentials, null, 2));
-            console.log('Drivechatbot.json file created successfully.');
-        } catch (error) {
-            throw new Error(`Failed to write Drivechatbot.json file: ${error.message}`);
-        }
-    } else {
-        console.log('Drivechatbot.json file already exists.');
-    }
+    const data = JSON.parse(process.env.Drivechatbot);
+    console.log(data);
 }
+
 catch (error) {
-    console.error("Error parsing JSON:", response);
+    console.error("Error parsing JSON:", error);
+}
+
+if (!driveCredentials) {
+    throw new Error('Drivechatbot environment variable is not defined');
+}
+// Ruta al archivo Drivechatbot.json
+const driveJsonPath = path.join(process.cwd(), 'Drivechatbot.json');
+
+// Verifica si el archivo Drivechatbot.json existe, si no, lo crea
+if (!fs.existsSync(driveJsonPath)) {
+    try {
+        fs.writeFileSync(driveJsonPath, JSON.stringify(driveCredentials, null, 2));
+        console.log('Drivechatbot.json file created successfully.');
+    } catch (error) {
+        throw new Error(`Failed to write Drivechatbot.json file: ${error.message}`);
+    }
+} else {
+    console.log('Drivechatbot.json file already exists.');
 }
 
 const { Storage } = require('@google-cloud/storage');

@@ -5,7 +5,7 @@ const path = require('path');
 const fs = require('fs');
 const pdf = require("pdf-parse");
 
-// Me conecto con drive para tener las credenciales y permisos de acceso
+/*// Me conecto con drive para tener las credenciales y permisos de acceso
 const driveCredentials = JSON.parse(process.env.Drivechatbot);
 
 if (!driveCredentials) {
@@ -27,20 +27,20 @@ if (!fs.existsSync(driveJsonPath)) {
 }
 
 const { Storage } = require('@google-cloud/storage');
-const storage = new Storage({ keyFilename: './Drivechatbot.json' });
+const storage = new Storage({ keyFilename: './Drivechatbot.json' });*/
 
 
 const geminiFlow = addKeyword(EVENTS.ACTION)
     .addAction(async (ctx, ctxFn) => {
-        // Me conecto con el archivo a utilizar que esta en drive
-        const bucketName = 'drive0_bucket-1'; // Reemplaza con el nombre de tu bucket
-        const fileName = 'ModulosPrecios.pdf'; // Reemplaza con el nombre del archivo en el bucket
-        const destination = './temp.pdf'; // Archivo temporal donde se descargará el PDF
-        const bucket = storage.bucket(bucketName);
-        const file = bucket.file(fileName);
-        await file.download({ destination });
+        /*  // Me conecto con el archivo a utilizar que esta en drive
+          const bucketName = 'drive0_bucket-1'; // Reemplaza con el nombre de tu bucket
+          const fileName = 'ModulosPrecios.pdf'; // Reemplaza con el nombre del archivo en el bucket
+          const destination = './temp.pdf'; // Archivo temporal donde se descargará el PDF
+          const bucket = storage.bucket(bucketName);
+          const file = bucket.file(fileName);
+          await file.download({ destination });*/
         // modifico el texto del pdf a texto plano para enviar a Gemini 
-        const pdfpath = destination;
+        const pdfpath = "./pdfs/modulos precios en pesos.pdf";
         const pdfBuff = fs.readFileSync(pdfpath)
         const pdfRead = await pdf(pdfBuff)
         const pdfText = pdfRead.text

@@ -2,10 +2,10 @@
   key: {
     remoteJid: '5491162132490@s.whatsapp.net',
     fromMe: false,
-    id: '8F925299CC07376C4CC987FB3F682565',
+    id: '7C5A6FECC4630625C59906C9C19B4A56',
     participant: undefined
   },
-  messageTimestamp: 1729266335,
+  messageTimestamp: 1729268229,
   pushName: 'M-M reparación de celulares',
   broadcast: false,
   message: Message {
@@ -20,8 +20,8 @@
   from: '5491162132490'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_0de77ce2-de98-4cd9-8164-2a5a8f275920',
-  keyword: 'key_8257f165-0452-477c-b9c2-91284d3eb0ec',
+  ref: 'ans_40890e57-7030-403b-965d-2a4dfc4b4531',
+  keyword: 'key_b5874f8b-be14-4726-ad9d-134405fdbe1d',
   answer: '__call_action__',
   options: {
     media: null,
@@ -35,16 +35,16 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '282e3246d456c64ea4201e5bbc5b78ce'
+  refSerialize: '96935c8df46c324b1f7da2bf872977fe'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5491162132490@s.whatsapp.net',
     fromMe: false,
-    id: 'E93BF9ED3EC7F693365F799630309D88',
+    id: 'F3A4F3A4901A78D740630069C7BE9BAA',
     participant: undefined
   },
-  messageTimestamp: 1729266340,
+  messageTimestamp: 1729268232,
   pushName: 'M-M reparación de celulares',
   broadcast: false,
   message: Message {
@@ -59,8 +59,8 @@
   from: '5491162132490'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_0de77ce2-de98-4cd9-8164-2a5a8f275920',
-  keyword: 'key_8257f165-0452-477c-b9c2-91284d3eb0ec',
+  ref: 'ans_40890e57-7030-403b-965d-2a4dfc4b4531',
+  keyword: 'key_b5874f8b-be14-4726-ad9d-134405fdbe1d',
   answer: '__call_action__',
   options: {
     media: null,
@@ -74,5 +74,180 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '282e3246d456c64ea4201e5bbc5b78ce'
+  refSerialize: '96935c8df46c324b1f7da2bf872977fe'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5491162132490@s.whatsapp.net',
+    fromMe: false,
+    id: '0E3AFA5A1156C9F9B1682F217328B51C',
+    participant: undefined
+  },
+  messageTimestamp: 1729268235,
+  pushName: 'M-M reparación de celulares',
+  broadcast: false,
+  message: Message {
+    conversation: '3',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'M-M reparación de celulares',
+  body: '3',
+  from: '5491162132490'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_cd62365f-1ab2-4632-83b6-038cc81da47f',
+  keyword: 'key_658ffb85-9795-49e5-a72a-1ab07ffbd531',
+  answer: 'Excelente, te vamos a contactar con un asesor. Para eso te voy a hacer 3 preguntas',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '50296af3073c78a258c4e1841a4a57df'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_5f03eebb-000c-4a22-bb03-179ac45a588e',
+  keyword: 'ans_cd62365f-1ab2-4632-83b6-038cc81da47f',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '3a08983b36fdaa0d1a55a34e198229a1'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5491162132490@s.whatsapp.net',
+    fromMe: false,
+    id: 'B30F3EB24EA443226EFF9F331EAA1A01',
+    participant: undefined
+  },
+  messageTimestamp: 1729268240,
+  pushName: 'M-M reparación de celulares',
+  broadcast: false,
+  message: Message {
+    conversation: 'Pepe',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'M-M reparación de celulares',
+  body: 'Pepe',
+  from: '5491162132490'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_fd654be5-ade0-44c2-a754-a1c30a7c040b',
+  keyword: 'ans_66af152d-926d-4da9-9f97-3e81d17cd0b2',
+  answer: '*¿Cual es tu mail?*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '22d9c400066d2c2cadad59790013da5c'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5491162132490@s.whatsapp.net',
+    fromMe: false,
+    id: '7EB2C2E4E8482988C3F2F4ADA46C91B1',
+    participant: undefined
+  },
+  messageTimestamp: 1729268243,
+  pushName: 'M-M reparación de celulares',
+  broadcast: false,
+  message: Message {
+    conversation: 'pepe@mail.com',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'M-M reparación de celulares',
+  body: 'pepe@mail.com',
+  from: '5491162132490'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_d8c389a6-e3bb-4ade-b92d-97200ad8a128',
+  keyword: 'ans_fd654be5-ade0-44c2-a754-a1c30a7c040b',
+  answer: '*¿Cual es el motivo de tu contacto?*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'a5b76ea40a7ef3efec75113ff121bad1'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5491162132490@s.whatsapp.net',
+    fromMe: false,
+    id: 'FDBA79F9B5DC5190E8DFD396B41E2170',
+    participant: undefined
+  },
+  messageTimestamp: 1729268248,
+  pushName: 'M-M reparación de celulares',
+  broadcast: false,
+  message: Message {
+    conversation: 'No me acuerdo',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'M-M reparación de celulares',
+  body: 'No me acuerdo',
+  from: '5491162132490'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_33f68eca-36d7-43ee-807d-8b2a476ed132',
+  keyword: 'ans_d8c389a6-e3bb-4ade-b92d-97200ad8a128',
+  answer: '¡Gracias por la información! Seras contactado a la brevedad \n' +
+    'Escribe *Menu* para volver a ver las opciones',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '3f2be1c57624fb6b13e460fafc513fa5'
 }

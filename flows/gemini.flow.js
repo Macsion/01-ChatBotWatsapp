@@ -8,15 +8,6 @@ const pdf = require("pdf-parse");
 // Me conecto con drive para tener las credenciales y permisos de acceso
 const driveCredentials = JSON.parse(process.env.Drivechatbot);
 
-try {
-    const data = JSON.parse(process.env.Drivechatbot);
-    console.log(data);
-}
-
-catch (error) {
-    console.error("Error parsing JSON:", error);
-}
-
 if (!driveCredentials) {
     throw new Error('Drivechatbot environment variable is not defined');
 }
@@ -65,42 +56,3 @@ const geminiFlow = addKeyword(EVENTS.ACTION)
 
 module.exports = { geminiFlow };
 
-
-/*.addAction(async (ctx, ctxFn) => {
-     const pdfpath = "pdfs/ModulosPrecios.pdf"
-     const pdfBuff = fs.readFileSync(pdfpath)
-     const pdfRead = await pdf(pdfBuff)
-     const pdfText = pdfRead.text
-
-     const prompt = "Sos un contacto inicial de un servicio de reparacion de celulares que te van a hacer preguntya sobre los precios. La lista de precios es la siguiente:" + pdfText
-     const text = ctx.body;
-
-     // Recuperar el estado actual
-     let userState = await ctxFn.state.getMyState() || {};
-     userState.conversations = userState.conversations ?? [];
-     const conversations = userState.conversations;
-
-     // Crear el contexto con las últimas dos conversaciones
-     const contextMessages = conversations.flatMap(conv => [
-         { role: "user", content: conv.question },
-         { role: "assistant", content: conv.answer }
-     ]);
-
-     // Añadir la pregunta actual al contexto
-     contextMessages.push({ role: "user", content: text });
-
-     // Obtener la respuesta de ChatGPT
-     const response = await chat2(prompt, contextMessages);
-
-     // Actualizar el estado con la nueva conversación
-     const newConversations = [...conversations, { question: text, answer: response }];
-     if (newConversations.length > 2) {
-         newConversations.shift(); // Mantener solo las últimas dos entradas
-     }
-
-     await ctxFn.state.update({ conversations: newConversations });
-
-
-     // Enviar la respuesta al usuario
-     await ctxFn.flowDynamic(response);
- });*/

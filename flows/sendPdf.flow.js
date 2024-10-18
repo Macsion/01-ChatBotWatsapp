@@ -10,6 +10,7 @@ const sendPdfFlow = addKeyword(EVENTS.ACTION)
                 media: "http://localhost:4000/pdfs/ModulosPrecios.pdf",
             }
         ]);
-    });
+    })
+    .addAnswer("📄 Escribi 'Menu' para volver a ver las opciones 📄");
 
 module.exports = { sendPdfFlow };

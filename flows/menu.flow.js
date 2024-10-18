@@ -36,7 +36,7 @@ const menuFlow = addKeyword(EVENTS.ACTION)
                 return ctxFn.fallBack("No elegiste una opcion correcta. Elegi 1, 2, 3 o 0")
             }
             if (ctx.body === "0") {
-                return ctxFn.endFlow("Volviendo al menu principal. Escribi 'Menu' para volver a ver las opciones")
+                return ctxFn.endFlow("Volviendo al menu principal. Escribi *'Menu'* para volver a ver las opciones")
             }
         }, [flow1, flow2, flow3])
 

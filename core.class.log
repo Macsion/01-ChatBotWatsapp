@@ -2,49 +2,10 @@
   key: {
     remoteJid: '5491162132490@s.whatsapp.net',
     fromMe: false,
-    id: '7C5A6FECC4630625C59906C9C19B4A56',
+    id: 'E1755D606E4B1C16C6BF6F65CA6156F8',
     participant: undefined
   },
-  messageTimestamp: 1729268229,
-  pushName: 'M-M reparación de celulares',
-  broadcast: false,
-  message: Message {
-    conversation: 'Hola',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  verifiedBizName: 'M-M reparación de celulares',
-  body: 'Hola',
-  from: '5491162132490'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_40890e57-7030-403b-965d-2a4dfc4b4531',
-  keyword: 'key_b5874f8b-be14-4726-ad9d-134405fdbe1d',
-  answer: '__call_action__',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '96935c8df46c324b1f7da2bf872977fe'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5491162132490@s.whatsapp.net',
-    fromMe: false,
-    id: 'F3A4F3A4901A78D740630069C7BE9BAA',
-    participant: undefined
-  },
-  messageTimestamp: 1729268232,
+  messageTimestamp: 1729274153,
   pushName: 'M-M reparación de celulares',
   broadcast: false,
   message: Message {
@@ -59,8 +20,8 @@
   from: '5491162132490'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_40890e57-7030-403b-965d-2a4dfc4b4531',
-  keyword: 'key_b5874f8b-be14-4726-ad9d-134405fdbe1d',
+  ref: 'ans_5d221f1c-e864-4a2d-99e8-0c8f86e62e95',
+  keyword: 'key_34a2ca09-267b-4dd4-bece-5a28b2441a6e',
   answer: '__call_action__',
   options: {
     media: null,
@@ -74,16 +35,16 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '96935c8df46c324b1f7da2bf872977fe'
+  refSerialize: 'd56cbdb2731f2602025ddd2cf9709f32'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5491162132490@s.whatsapp.net',
     fromMe: false,
-    id: '0E3AFA5A1156C9F9B1682F217328B51C',
+    id: '656965F7FD5C589A02B8F9F06DA4501F',
     participant: undefined
   },
-  messageTimestamp: 1729268235,
+  messageTimestamp: 1729274156,
   pushName: 'M-M reparación de celulares',
   broadcast: false,
   message: Message {
@@ -98,8 +59,8 @@
   from: '5491162132490'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_cd62365f-1ab2-4632-83b6-038cc81da47f',
-  keyword: 'key_658ffb85-9795-49e5-a72a-1ab07ffbd531',
+  ref: 'ans_bcc52ea3-e5d0-4c47-ad62-73d3b5654f09',
+  keyword: 'key_bd38c13d-bb4a-450c-a809-5a9627a16e2c',
   answer: 'Excelente, te vamos a contactar con un asesor. Para eso te voy a hacer 3 preguntas',
   options: {
     media: null,
@@ -113,11 +74,11 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '50296af3073c78a258c4e1841a4a57df'
+  refSerialize: '3fad7c4fecfc6a34fe6e3a3dd578821d'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_5f03eebb-000c-4a22-bb03-179ac45a588e',
-  keyword: 'ans_cd62365f-1ab2-4632-83b6-038cc81da47f',
+  ref: 'ans_40516a7b-fca2-4f8d-acb3-6b9fb03fa4c8',
+  keyword: 'ans_bcc52ea3-e5d0-4c47-ad62-73d3b5654f09',
   answer: '__call_action__',
   options: {
     media: null,
@@ -131,32 +92,32 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '3a08983b36fdaa0d1a55a34e198229a1'
+  refSerialize: 'afde3452adbc2adf8c88143aae240c6d'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5491162132490@s.whatsapp.net',
     fromMe: false,
-    id: 'B30F3EB24EA443226EFF9F331EAA1A01',
+    id: '663F3F0F4D2816270561BDD27F5A08A7',
     participant: undefined
   },
-  messageTimestamp: 1729268240,
+  messageTimestamp: 1729274161,
   pushName: 'M-M reparación de celulares',
   broadcast: false,
   message: Message {
-    conversation: 'Pepe',
+    conversation: 'Nacho',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
   verifiedBizName: 'M-M reparación de celulares',
-  body: 'Pepe',
+  body: 'Nacho',
   from: '5491162132490'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_fd654be5-ade0-44c2-a754-a1c30a7c040b',
-  keyword: 'ans_66af152d-926d-4da9-9f97-3e81d17cd0b2',
+  ref: 'ans_6fcf8ba3-68ea-46e6-9dce-74c5fcae14c7',
+  keyword: 'ans_bfe362a2-3ddb-4a5a-840b-e97e7e965ee8',
   answer: '*¿Cual es tu mail?*',
   options: {
     media: null,
@@ -170,32 +131,32 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '22d9c400066d2c2cadad59790013da5c'
+  refSerialize: '7039b726e2baea2a6ae99350f3cda11f'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5491162132490@s.whatsapp.net',
     fromMe: false,
-    id: '7EB2C2E4E8482988C3F2F4ADA46C91B1',
+    id: 'D8D26722A66D4701C56DD82AD0DDC16F',
     participant: undefined
   },
-  messageTimestamp: 1729268243,
+  messageTimestamp: 1729274171,
   pushName: 'M-M reparación de celulares',
   broadcast: false,
   message: Message {
-    conversation: 'pepe@mail.com',
+    conversation: 'Nacho@mail.com',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
   verifiedBizName: 'M-M reparación de celulares',
-  body: 'pepe@mail.com',
+  body: 'Nacho@mail.com',
   from: '5491162132490'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_d8c389a6-e3bb-4ade-b92d-97200ad8a128',
-  keyword: 'ans_fd654be5-ade0-44c2-a754-a1c30a7c040b',
+  ref: 'ans_f7a4561a-7958-41d6-88ab-485cbe69fdfa',
+  keyword: 'ans_6fcf8ba3-68ea-46e6-9dce-74c5fcae14c7',
   answer: '*¿Cual es el motivo de tu contacto?*',
   options: {
     media: null,
@@ -209,32 +170,32 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'a5b76ea40a7ef3efec75113ff121bad1'
+  refSerialize: 'b766ff162cb6eb2099486d8facaed21c'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5491162132490@s.whatsapp.net',
     fromMe: false,
-    id: 'FDBA79F9B5DC5190E8DFD396B41E2170',
+    id: '2C5B9A561BDAB21D1877852140044301',
     participant: undefined
   },
-  messageTimestamp: 1729268248,
+  messageTimestamp: 1729274178,
   pushName: 'M-M reparación de celulares',
   broadcast: false,
   message: Message {
-    conversation: 'No me acuerdo',
+    conversation: 'Nachos con coca',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
   verifiedBizName: 'M-M reparación de celulares',
-  body: 'No me acuerdo',
+  body: 'Nachos con coca',
   from: '5491162132490'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_33f68eca-36d7-43ee-807d-8b2a476ed132',
-  keyword: 'ans_d8c389a6-e3bb-4ade-b92d-97200ad8a128',
+  ref: 'ans_4ce08c6f-73cf-4e07-acc2-6ea7afbc680e',
+  keyword: 'ans_f7a4561a-7958-41d6-88ab-485cbe69fdfa',
   answer: '¡Gracias por la información! Seras contactado a la brevedad \n' +
     'Escribe *Menu* para volver a ver las opciones',
   options: {
@@ -249,5 +210,5 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '3f2be1c57624fb6b13e460fafc513fa5'
+  refSerialize: '340ae048e68f4df474c968935798ee1b'
 }

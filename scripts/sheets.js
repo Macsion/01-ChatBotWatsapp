@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require("fs");
 require("dotenv").config();
 
-const googleCredentials = process.env.cursochatbot;
+const googleCredentials = JSON.parse(process.env.cursochatbot);
 
 if (!googleCredentials) {
     throw new Error('cursochatbot environment variable is not defined');
@@ -33,7 +33,7 @@ const auth = new google.auth.GoogleAuth({
     scopes: ['https://www.googleapis.com/auth/spreadsheets']  // Alcance para la API de Google Sheets.
 });
 
-const spreadsheetId = '1TFr4NpdZ5NJwTAs_V2doOmmx5DlBiioOa8ICWYqoyCE'; // ID de tu hoja de cálculo.
+const spreadsheetId = process.env.SHEET_API_KEY; // ID de tu hoja de cálculo.
 
 
 // Función asíncrona para escribir datos en una hoja de cálculo de Google.

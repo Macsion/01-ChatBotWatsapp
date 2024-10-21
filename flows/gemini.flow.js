@@ -40,7 +40,7 @@ const geminiFlow = addKeyword(EVENTS.ACTION)
           const file = bucket.file(fileName);
           await file.download({ destination });*/
         // modifico el texto del pdf a texto plano para enviar a Gemini 
-        const pdfpath = "./pdfs/modulos precios en pesos.pdf";
+        const pdfpath = "./pdfs/ModulosPrecios.pdf";
         const pdfBuff = fs.readFileSync(pdfpath)
         const pdfRead = await pdf(pdfBuff)
         const pdfText = pdfRead.text

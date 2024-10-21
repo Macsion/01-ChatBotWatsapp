@@ -4,25 +4,30 @@ const path = require('path');
 const fs = require("fs");
 require("dotenv").config();
 
-const googleCredentials = JSON.parse(process.env.cursochatbot);
+try {
+    const googleCredentials = JSON.parse(process.env.cursochatbot);
 
-if (!googleCredentials) {
-    throw new Error('cursochatbot environment variable is not defined');
-}
-
-// Ruta al archivo cursochatbot.json
-const googleJsonPath = path.join(process.cwd(), 'cursochatbot.json');
-
-// Verifica si el archivo cursochatbot.json existe, si no, lo crea
-if (!fs.existsSync(googleJsonPath)) {
-    try {
-        fs.writeFileSync(googleJsonPath, JSON.stringify(googleCredentials, null, 2));
-        console.log('cursochatbot.json file created successfully.');
-    } catch (error) {
-        throw new Error(`Failed to write cursochatbot.json file: ${error.message}`);
+    if (!googleCredentials) {
+        throw new Error('cursochatbot environment variable is not defined');
     }
-} else {
-    console.log('cursochatbot.json file already exists.');
+
+    // Ruta al archivo cursochatbot.json
+    const googleJsonPath = path.join(process.cwd(), 'cursochatbot.json');
+
+    // Verifica si el archivo cursochatbot.json existe, si no, lo crea
+    if (!fs.existsSync(googleJsonPath)) {
+        try {
+            fs.writeFileSync(googleJsonPath, JSON.stringify(googleCredentials, null, 2));
+            console.log('cursochatbot.json file created successfully.');
+        } catch (error) {
+            throw new Error(`Failed to write cursochatbot.json file: ${error.message}`);
+        }
+    } else {
+        console.log('cursochatbot.json file already exists.');
+    }
+}
+catch (error) {
+    console.error('Error al parsear el JSON:', error);
 }
 
 

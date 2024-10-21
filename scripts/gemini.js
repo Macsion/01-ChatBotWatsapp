@@ -16,7 +16,7 @@ const chat2 = async (prompt, text) => {
         const answ = response.text();
         return answ
     }
-    catch {
+    catch (err) {
         console.error("Error al conectar con Gemini:", err);
         return "Ha ocurrido un ERROR. Escribe 'Menu' para volver al inicio";
     }

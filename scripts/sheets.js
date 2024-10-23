@@ -4,26 +4,27 @@ const path = require('path');
 const fs = require("fs");
 require("dotenv").config();
 
+
 try {
     const googleCredentials = JSON.parse(process.env.GOOGLE_JSON);
 
     if (!googleCredentials) {
-        throw new Error('cursochatbot environment variable is not defined');
+        throw new Error('GOOGLE_JSON environment variable is not defined');
     }
 
-    // Ruta al archivo cursochatbot.json
-    const googleJsonPath = path.join(process.cwd(), 'cursochatbot.json');
+    // Ruta al archivo google.json
+    const googleJsonPath = path.join(process.cwd(), 'google.json');
 
-    // Verifica si el archivo cursochatbot.json existe, si no, lo crea
+    // Verifica si el archivo google.json existe, si no, lo crea
     if (!fs.existsSync(googleJsonPath)) {
         try {
             fs.writeFileSync(googleJsonPath, JSON.stringify(googleCredentials, null, 2));
-            console.log('cursochatbot.json file created successfully.');
+            console.log('google.json file created successfully.');
         } catch (error) {
-            throw new Error(`Failed to write cursochatbot.json file: ${error.message}`);
+            throw new Error(`Failed to write google.json file: ${error.message}`);
         }
     } else {
-        console.log('cursochatbot.json file already exists.');
+        console.log('google.json file already exists.');
     }
 }
 catch (error) {
@@ -31,14 +32,13 @@ catch (error) {
 }
 
 
-
 // Inicializa la librería cliente de Drive y configura la autenticación con credenciales de la cuenta de servicio.
 const auth = new google.auth.GoogleAuth({
-    keyFile: './cursochatbot.json',  // Ruta al archivo de clave de tu cuenta de servicio.
+    keyFile: './google.json',  // Ruta al archivo de clave de tu cuenta de servicio.
     scopes: ['https://www.googleapis.com/auth/spreadsheets']  // Alcance para la API de Google Sheets.
 });
 
-const spreadsheetId = process.env.SHEET.API.KEY; // ID de tu hoja de cálculo. process.env.SHEET.API.KEY
+const spreadsheetId = "1TFr4NpdZ5NJwTAs_V2doOmmx5DlBiioOa8ICWYqoyCE"; // ID de tu hoja de cálculo. process.env.SHEET.API.KEY
 
 
 // Función asíncrona para escribir datos en una hoja de cálculo de Google.

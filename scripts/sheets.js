@@ -5,7 +5,7 @@ const fs = require("fs");
 require("dotenv").config();
 
 try {
-    const googleCredentials = JSON.parse(process.env.cursochatbot, { encoding: 'utf8' });
+    const googleCredentials = JSON.parse(process.env.GOOGLE_JSON);
 
     if (!googleCredentials) {
         throw new Error('cursochatbot environment variable is not defined');

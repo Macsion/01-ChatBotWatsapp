@@ -38,7 +38,7 @@ const auth = new google.auth.GoogleAuth({
     scopes: ['https://www.googleapis.com/auth/spreadsheets']  // Alcance para la API de Google Sheets.
 });
 
-const spreadsheetId = "1TFr4NpdZ5NJwTAs_V2doOmmx5DlBiioOa8ICWYqoyCE"; // ID de tu hoja de cálculo. process.env.SHEET.API.KEY
+const spreadsheetId = process.env.SHEET.API.KEY; // ID de tu hoja de cálculo. process.env.SHEET.API.KEY
 
 
 // Función asíncrona para escribir datos en una hoja de cálculo de Google.
